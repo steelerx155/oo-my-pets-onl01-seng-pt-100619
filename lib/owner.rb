@@ -1,7 +1,7 @@
 require 'pry'
 class Owner
 
-  attr_reader :name, :species, :cat
+  attr_reader :name, :species, :cat, :walk_dogs
   
   @@all = []
   @@count = 0
@@ -38,6 +38,24 @@ class Owner
   Dog.all.select {|dog| dog.owner == self }
   end
   
-  def buy_cat
-    Cat.new @@all 
-end
+  def buy_cat(name)
+  # binding.pry  
+   cat = Cat.new(name, self)
+   cat
+  end
+    
+  def buy_dog(name)
+    dog = Dog.new(name, self)
+    dog
+  end
+ 
+  def walk_dogs
+    # binding.pry
+    # Dog.all.select {|dog| Dog.owner == self}
+    self.walk_dogs
+    end
+end  
+
+
+
+    

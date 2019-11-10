@@ -52,7 +52,7 @@ class Owner
   def walk_dogs
     # binding.pry
     # Dog.all.select {|dog| Dog.owner == self}
-    self.walk_dogs
+    # self.walk_dogs
     end
 end  
 

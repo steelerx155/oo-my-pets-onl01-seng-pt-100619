@@ -50,8 +50,7 @@ class Owner
   end
  
   def walk_dogs
-    binding.pry
-    dog.all.select {dog| dog.self == self}
+    self.dogs
     end
 end  
 

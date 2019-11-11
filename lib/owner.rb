@@ -63,10 +63,10 @@ class Owner
   def sell_pets
     # binding.pry
     self.cats
-    Cat.all.select {|cat| cat.mood = 'happy'}
+    Cat.all.select {|cat| cat.mood = 'nervous'}
     self.dogs
     # Cat.all.select {|cat| cat.mood = 'happy'}
-    Dog.all.select {|dog| dog.mood = 'happy'}
+    Dog.all.select {|dog| dog.mood = 'nervous'}
     
  end  
 end 

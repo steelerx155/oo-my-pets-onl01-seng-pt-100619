@@ -52,7 +52,7 @@ class Owner
   def walk_dogs
     binding.pry
     self.dogs
-   end
+  end
 end  
 
 

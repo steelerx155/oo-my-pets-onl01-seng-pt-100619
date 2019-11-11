@@ -62,9 +62,11 @@ class Owner
   
   def sell_pets
     self.cats
-    Cat.all.select {|cat| cat.mood = 'nervous', cat.owner = nil}
+    Cat.all.select {|cat| cat.mood = 'nervous'}
     self.dogs
-    Dog.all.select {|dog| dog.mood = 'nervous', dog.owner = nil}
+    Dog.all.select {|dog| dog.mood = 'nervous'}
+    Cat.all.select {|dog| dog.owner = nil }
+    Dog.all.select {|cat| dog.owner = nil }
    
  end  
 end 

@@ -65,8 +65,8 @@ class Owner
     Cat.all.select {|cat| cat.mood = 'nervous'}
     self.dogs
     Dog.all.select {|dog| dog.mood = 'nervous'}
-    Cat.all.select {|dog| dog.owner = 'nil'}
-    Dog.all.select {|cat| cat.owner = 'nil'}
+    Cat.all.select {|dog| dog.owner = }
+    Dog.all.select {|cat| cat.owner = }
  end  
 end 
 

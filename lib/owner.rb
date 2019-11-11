@@ -64,6 +64,8 @@ class Owner
     binding.pry
     self.cats
     self.dogs
+    Cat.all.select {|cat| cat.mood = 'happy'}
+    Dog.all.select {|dog| dog.mood = 'happy'}
     
  end  
 end 

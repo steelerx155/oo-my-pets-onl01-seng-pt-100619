@@ -50,9 +50,9 @@ class Owner
   end
  
   def walk_dogs
-    # binding.pry
-    # self.dogs
-    self.dogs.all.select {|dog| dog.owner == 'happy'}
+    binding.pry
+    self.dogs
+    self.dogs.all.select {|dog| dog.owner = self}
     
   end
 end  

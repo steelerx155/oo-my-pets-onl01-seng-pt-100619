@@ -62,7 +62,9 @@ class Owner
   
   def sell_pets
     binding.pry
-    self.cat
+    self.cats
+    self.dogs
+    
  end  
 end 
 

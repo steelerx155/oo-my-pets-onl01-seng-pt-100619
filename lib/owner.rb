@@ -53,8 +53,11 @@ class Owner
     # binding.pry
     self.dogs
     Dog.all.select {|dog| dog.mood = 'happy'}
-    
   end
+  
+  def feed_cats
+    self.cats
+    Cat.all.select {|cat| cat.mood = 'happy'}
 end  
 
 

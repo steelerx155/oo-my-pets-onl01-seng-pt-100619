@@ -61,7 +61,7 @@ class Owner
   end  
   
   def sell_pets
-    binding.pry
+    # binding.pry
     self.cats
     self.dogs
     Cat.all.select {|cat| cat.mood = 'happy'}

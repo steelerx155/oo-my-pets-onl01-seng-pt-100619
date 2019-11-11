@@ -1,7 +1,7 @@
 require 'pry'
 class Owner
 
-  attr_reader :name, :species, :cat
+  attr_reader :name, :species, :cat 
   
   @@all = []
   @@count = 0
@@ -50,9 +50,9 @@ class Owner
   end
  
   def walk_dogs
-    binding.pry
-    Dog.all.select {|dog| dog.owner == self.dogs }
-    
+    # binding.pry
+    self.dogs
+    Dog.mood = 'happy'
   end
 end  
 

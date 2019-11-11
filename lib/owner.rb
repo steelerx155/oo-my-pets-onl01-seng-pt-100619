@@ -72,7 +72,7 @@ class Owner
    end  
    
    def list_pets
-     @@all
+     @@all = []
    end
 end 
 

@@ -59,6 +59,10 @@ class Owner
     self.cats
     Cat.all.select {|cat| cat.mood = 'happy'}
   end  
+  
+  def sell_pets
+    binding.pry
+    self.cat
 end  
 
 
